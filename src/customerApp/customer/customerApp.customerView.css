@@ -1,0 +1,82 @@
+.cust-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.cust-table thead tr:first-child{
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.cust-table th,
+.cust-table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cust-table tbody tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.cust-table tbody tr:hover{
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .cust-table{
+    font-size: 14px;
+  }
+  .cust-table th,
+  .cust-table td{
+    padding: 8px;
+  }
+}
+
+.input-form {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Centering the form */
+  font-size: 16px;
+  background: #f8f9fa; /* Light background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-form td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Separates rows */
+}
+
+.input-form tr:last-child td {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.input-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-form input[type="button"] {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.input-form input[type="button"]:hover {
+  background: #45a049; /* Darker green on hover */
+}

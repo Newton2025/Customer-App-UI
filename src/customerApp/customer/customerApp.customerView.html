@@ -1,0 +1,46 @@
+<table class="input-form">
+  <tbody>
+  <tr>
+    <td>Customer Code</td>
+     <td>
+       <input type="text" [(ngModel)]="customerModel.customerCode" >
+<!--       [(ngModel)]="text"-->
+     </td>
+  </tr>
+  <tr>
+    <td>Customer Name</td>
+    <td><input  type="text" [(ngModel)]="customerModel.customerName"
+    name="customerName"></td>
+
+  </tr>
+  <tr>
+    <td>Customer Amount</td>
+    <td><input type="text" [(ngModel)]="customerModel.customerAmount" ></td>
+  </tr>
+  <tr>
+    <td>Submit</td>
+    <td><input (click) ="Add()" type="button" value="Add"></td>
+  </tr>
+  </tbody>
+</table>
+
+{{customerModel.customerCode}} <br>
+{{customerModel.customerName}} <br>
+{{customerModel.customerAmount}} <br>
+
+<table class="cust-table">
+  <thead>
+  <tr>
+    <th>Customer Code</th>
+    <th>Customer Name</th>
+    <th>Customer Amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let cust of customerModels">
+    <td>{{cust.customerCode}}</td>
+    <td>{{cust.customerName}}</td>
+    <td>{{cust.customerAmount}}</td>
+  </tr>
+  </tbody>
+</table>
